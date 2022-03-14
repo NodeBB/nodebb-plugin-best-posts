@@ -1,0 +1,12 @@
+{
+    "library": "./index.js",
+    "hooks": [
+        { "hook": "static:app.load", "method": "init"},
+        { "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas" }
+    ],
+    "modules": {
+        "../client/best-posts.js": "./public/best-posts.js"
+    },
+    "templates": "./public/templates",
+    "languages": "languages"
+}

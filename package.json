@@ -1,0 +1,31 @@
+{
+  "name": "nodebb-plugin-best-posts",
+  "version": "1.0.0",
+  "description": "A Plugin that the bests posts in the forum",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NodeBB/nodebb-plugin-best-posts"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "feed"
+  ],
+  "author": "Baris Usakli <baris@nodebb.org>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "4.17.21"
+  },
+  "devDependencies": {
+    "eslint": "8.11.0",
+    "eslint-config-nodebb": "0.1.1",
+    "eslint-plugin-import": "2.25.4"
+  },
+  "nbbpm": {
+    "compatibility": "^1.17.0"
+  }
+}
