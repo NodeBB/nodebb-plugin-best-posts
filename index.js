@@ -22,10 +22,6 @@ plugin.init = async function (params) {
 };
 
 async function renderBestPosts(req, res, next) {
-	if (!req.loggedIn) {
-		return controllerHelpers.notAllowed(req, res);
-	}
-
 	let term = controllerHelpers.terms[req.query.term];
 	if (!term && req.query.term) {
 		return next();
