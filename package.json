@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-best-posts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Plugin that the bests posts in the forum",
   "main": "index.js",
   "repository": {
