@@ -84,7 +84,7 @@ async function getPids(cids, term) {
 		// sort by rep
 		const scores = await db.sortedSetScores('posts:votes', pids);
 		const postData = pids.map((pid, index) => ({ value: pid, score: scores[index] }));
-		return postData.sort((p1, p2) => p2.score - p1.score).map(p => p.value);
+		return postData.sort((p1, p2) => p2.score - p1.score).slice(0, 200).map(p => p.value);
 	}
 
 	if (cids) {
