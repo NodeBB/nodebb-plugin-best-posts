@@ -6,20 +6,8 @@
 
 <div class="feed">
 	<div class="topic-list-header btn-toolbar">
-		<!-- IMPORT partials/category-filter-right.tpl -->
-
-		<div class="btn-group pull-right bottom-sheet <!-- IF !terms.length -->hidden<!-- ENDIF !terms.length -->">
-			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-			{selectedTerm.name} <span class="caret"></span>
-			</button>
-			<ul class="dropdown-menu" role="menu">
-				{{{each terms}}}
-				<li role="presentation" class="category">
-					<a role="menu-item" href="{config.relative_path}/{terms.url}"><i class="fa fa-fw <!-- IF terms.selected -->fa-check<!-- ENDIF terms.selected -->"></i>{terms.name}</a>
-				</li>
-				{{{end}}}
-			</ul>
-		</div>
+		<!-- IMPORT partials/category/filter-dropdown-left.tpl -->
+		<!-- IMPORT partials/topic-terms.tpl -->
 	</div>
 	<div class="row">
 		<div data-widget-area="left" class="col-lg-3 col-sm-12 {{{ if !widgets.left.length }}}hidden{{{ end }}}">

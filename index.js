@@ -18,7 +18,7 @@ const plugin = module.exports;
 const relative_path = nconf.get('relative_path');
 
 plugin.init = async function (params) {
-	routeHelpers.setupPageRoute(params.router, '/best-posts', params.middleware, [], renderBestPosts);
+	routeHelpers.setupPageRoute(params.router, '/best-posts', renderBestPosts);
 };
 
 async function renderBestPosts(req, res, next) {

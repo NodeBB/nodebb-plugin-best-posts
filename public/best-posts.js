@@ -37,7 +37,6 @@ define('forum/best-posts', [
 			html.find('img:not(.not-responsive)').addClass('img-responsive');
 			html.find('.timeago').timeago();
 			app.createUserTooltips();
-			utils.makeNumbersHumanReadable(html.find('.human-readable-number'));
 			callback();
 		});
 	}
